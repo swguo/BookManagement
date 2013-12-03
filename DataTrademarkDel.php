@@ -1,0 +1,1 @@
+<?php	include_once('sql/mysql.php');	include_once('sql/tool.php');	if($_POST['IDD']){		mysql_query("delete from trademark where IDD='".$_POST['IDD']."'");		echo "OK";	}else{		echo "ERROR";	}?>
